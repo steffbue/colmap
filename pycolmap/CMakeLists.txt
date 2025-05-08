@@ -25,7 +25,7 @@ if (CMAKE_VERSION VERSION_LESS 3.18)
 else()
     set(DEV_MODULE Development.Module)
 endif()
-find_package(Python REQUIRED COMPONENTS Interpreter ${DEV_MODULE} REQUIRED)
+find_package(Python REQUIRED COMPONENTS Interpreter ${DEV_MODULE})
 
 find_package(pybind11 2.13.0 REQUIRED)
 
